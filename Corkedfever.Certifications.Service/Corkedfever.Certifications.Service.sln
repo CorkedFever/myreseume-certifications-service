@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corkedfever.Certifications.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corkedfever.Certifications.Data", "..\Corkedfever.Certifications.Data\Corkedfever.Certifications.Data.csproj", "{49E226EF-9B20-49BE-8DA9-F469B5B3D371}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{7BBF19D1-D572-445B-8417-25CEBA9FA322}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +32,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FCBD4E7F-4C61-4F63-92D4-55EDE9FD1D10} = {7BBF19D1-D572-445B-8417-25CEBA9FA322}
+		{B9D3B860-6AD1-4803-AB3C-F41601259CE2} = {7BBF19D1-D572-445B-8417-25CEBA9FA322}
+		{49E226EF-9B20-49BE-8DA9-F469B5B3D371} = {7BBF19D1-D572-445B-8417-25CEBA9FA322}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2C5F16CA-17E3-4CA0-A3F1-9591FD3CF58D}
