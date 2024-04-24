@@ -14,6 +14,7 @@ WORKDIR /src
 RUN DIR
 COPY . .
 RUN DIR
+RUN dotnet nuget add source "http://192.168.1.4:8090/v3/index.json" --name "localbaget"
 RUN dotnet restore "./Corkedfever.Certifications.Data/Corkedfever.Certifications.Data.csproj"
 RUN dotnet restore "./Corkedfever.Certifications.Business/Corkedfever.Certifications.Business.csproj"
 RUN dotnet restore "./Corkedfever.Certifications.Service/Corkedfever.Certifications.Service.csproj"
