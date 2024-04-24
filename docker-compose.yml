@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  corkedfever.certifications.service:
+    image: ${DOCKER_REGISTRY-}corkedfevercertificationsservice
+    build:
+      context: .
+      dockerfile: Corkedfever.Certifications.Service\Dockerfile
