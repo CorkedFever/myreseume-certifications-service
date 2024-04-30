@@ -13,6 +13,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Corkedfever.Certifications.
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{A988C2BF-4FAC-465C-96AC-7854C7D44636}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{D0124AC4-4DB9-4B30-850F-FF92CF3AD09F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corkedfever.Client.Certifications", "Corkedfever.Client.Certifications\Corkedfever.Client.Certifications.csproj", "{010BE251-35AC-4F58-B609-7F17ACCA797F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +39,10 @@ Global
 		{A988C2BF-4FAC-465C-96AC-7854C7D44636}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A988C2BF-4FAC-465C-96AC-7854C7D44636}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A988C2BF-4FAC-465C-96AC-7854C7D44636}.Release|Any CPU.Build.0 = Release|Any CPU
+		{010BE251-35AC-4F58-B609-7F17ACCA797F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{010BE251-35AC-4F58-B609-7F17ACCA797F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{010BE251-35AC-4F58-B609-7F17ACCA797F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{010BE251-35AC-4F58-B609-7F17ACCA797F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +51,7 @@ Global
 		{5D787022-8962-457B-A7B1-E6DB1025DE84} = {2C085333-1BC7-4ABA-9551-94A892820EE7}
 		{A55B8009-633C-46D0-939A-6F08A7DAFD4E} = {2C085333-1BC7-4ABA-9551-94A892820EE7}
 		{671CACA5-88C0-4F51-8570-55A4B2E206F8} = {2C085333-1BC7-4ABA-9551-94A892820EE7}
+		{010BE251-35AC-4F58-B609-7F17ACCA797F} = {D0124AC4-4DB9-4B30-850F-FF92CF3AD09F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2C5F16CA-17E3-4CA0-A3F1-9591FD3CF58D}
