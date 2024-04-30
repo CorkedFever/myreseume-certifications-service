@@ -154,7 +154,7 @@
       "templateDirectory": null,
       "serviceHost": null,
       "serviceSchemes": null,
-      "output": null,
+      "output": "../../Corkedfever.Client.Certifications/CertificationsClientBase.cs",
       "newLineBehavior": "Auto"
     }
   }
