@@ -18,6 +18,9 @@ namespace Corkedfever.Certifications.Service.Controllers
         }
 
         [HttpGet]
+        [Route("getAllCertifications")]
+        [ProducesResponseType(typeof(List<CertificationModel>),StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public IActionResult GetCertifications()
         {
             try
@@ -32,7 +35,9 @@ namespace Corkedfever.Certifications.Service.Controllers
         }
 
         [HttpGet]
-        [Route("{id}")]
+        [Route("GetCertification/{id}")]
+        [ProducesResponseType(typeof(CertificationModel), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public IActionResult GetCertificationById(int id)
         {
             try
@@ -46,7 +51,9 @@ namespace Corkedfever.Certifications.Service.Controllers
         }
 
         [HttpGet]
-        [Route("name/{name}")]
+        [Route("getCertificationbyName/{name}")]
+        [ProducesResponseType(typeof(CertificationModel), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public IActionResult GetCertificationByName(string name)
         {
             try
@@ -61,7 +68,9 @@ namespace Corkedfever.Certifications.Service.Controllers
         }
 
         [HttpGet]
-        [Route("types/{id}/certifications")]
+        [Route("getCertificationByType/{id}")]
+        [ProducesResponseType(typeof(CertificationTypesModel), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public IActionResult GetCertificationsByType(int id)
         {
             try
@@ -75,7 +84,9 @@ namespace Corkedfever.Certifications.Service.Controllers
         }
 
         [HttpGet]
-        [Route("types")]
+        [Route("GetAllCertificationTypes")]
+        [ProducesResponseType(typeof(List<CertificationTypesModel>), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public IActionResult GetCertificationTypes()
         {
             try
@@ -89,7 +100,9 @@ namespace Corkedfever.Certifications.Service.Controllers
         }
 
         [HttpGet]
-        [Route("types/{id}")]
+        [Route("GetCertificationType/{id}")]
+        [ProducesResponseType(typeof(CertificationTypesModel), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public IActionResult GetCertificationType(int id)
         {
             try
@@ -103,7 +116,10 @@ namespace Corkedfever.Certifications.Service.Controllers
         }
 
         [HttpPost]
-        public IActionResult Post(CertificationModel certification)
+        [Route("CreateCertification")]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public IActionResult CreateCertification(CertificationModel certification)
         {
             try
             {
@@ -117,8 +133,10 @@ namespace Corkedfever.Certifications.Service.Controllers
         }
 
         [HttpPost]
-        [Route("types")]
-        public IActionResult Post(CertificationTypesModel certificationType)
+        [Route("CreateCertificationTypes")]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public IActionResult CreateCertificationType(CertificationTypesModel certificationType)
         {
             try
             {
