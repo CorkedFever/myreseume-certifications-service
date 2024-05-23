@@ -1,6 +1,6 @@
 @Corkedfever.Certifications.Service_HostAddress = http://localhost:5249
 
-GET {{Corkedfever.Certifications.Service_HostAddress}}/weatherforecast/
+GET {{Corkedfever.Certifications.Service_HostAddress}}/Certifications/
 Accept: application/json
 
 ###
